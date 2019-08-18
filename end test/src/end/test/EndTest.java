@@ -9,6 +9,8 @@ package end.test;
  * @author hholm12
  */
 import java.util.*;
+import java.util.Random; 
+
 
 public class EndTest {
     /**
@@ -18,7 +20,9 @@ public class EndTest {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Endgame: ___"); //Says title
+        Random rand = new Random();
+       int rand_int1 = rand.nextInt(14000000);
+        System.out.println("Endgame: " + rand_int1); //Says title
         
         Scanner user = new Scanner(System.in);           //Ask name
         System.out.println("What's your alias?");
