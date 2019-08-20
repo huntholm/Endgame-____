@@ -313,9 +313,13 @@ public class UI extends javax.swing.JFrame {
         });
 
         jButton32.setText("Thanos snaps and turns you into a mop");
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/endtest/newpackage/download.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -367,16 +371,16 @@ public class UI extends javax.swing.JFrame {
                                 .addGap(260, 260, 260)
                                 .addComponent(jButton8))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jButton28)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton29)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton30)
-                                        .addGap(23, 23, 23))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jButton28)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jButton29)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jButton30)
+                                                .addGap(23, 23, 23))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jButton19)
                                                 .addGap(18, 18, 18)
@@ -386,19 +390,21 @@ public class UI extends javax.swing.JFrame {
                                                 .addGap(111, 111, 111)
                                                 .addComponent(jButton22)
                                                 .addGap(71, 71, 71)
-                                                .addComponent(jButton23))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(479, 479, 479)
-                                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jButton23)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                                        .addComponent(jButton31))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jButton24)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(773, 773, 773)
+                                                .addComponent(jButton24)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(68, 68, 68)))
                                         .addComponent(jButton25)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jButton26))
-                                    .addComponent(jButton31))
+                                        .addComponent(jButton26)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(62, 62, 62)
@@ -508,6 +514,7 @@ public class UI extends javax.swing.JFrame {
               jButton10.setVisible(true);
               jButton4.setVisible(false);
               jButton5.setVisible(false);
+              jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/battle edit.jpg"));
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -516,6 +523,7 @@ public class UI extends javax.swing.JFrame {
               jButton5.setVisible(false);
              
               jButton3.setVisible(false);
+              
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -532,6 +540,7 @@ public class UI extends javax.swing.JFrame {
           jButton8.setVisible(false);
             jButton14.setVisible(true);
               jButton15.setVisible(true);
+              jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/battle edit.jpg"));
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -539,6 +548,7 @@ public class UI extends javax.swing.JFrame {
          jButton18.setVisible(true);
           jButton7.setVisible(false);
           jButton6.setVisible(false);
+          jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/grab stones.jpg"));
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
@@ -547,20 +557,23 @@ public class UI extends javax.swing.JFrame {
               jButton24.setVisible(true);
               
           jButton15.setVisible(false);
-         
+         jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/cap.jpg"));
               
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
+        jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/McDonalds.jpg"));
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
+        jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/acl.jpg"));
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
+        jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/thanos farm.jpg"));
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
@@ -580,12 +593,14 @@ public class UI extends javax.swing.JFrame {
         // TODO add your handling code here:
         jButton22.setVisible(true);
               jButton13.setVisible(false);
+              jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/ripped.jpg"));
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
          jButton25.setVisible(true);
           jButton14.setVisible(false);
+          jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/iron man.jpg"));
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
@@ -598,10 +613,12 @@ public class UI extends javax.swing.JFrame {
         // TODO add your handling code here:
          jButton27.setVisible(true);
           jButton16.setVisible(false);
+          jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/walk out.jpg"));
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
+        jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/fortnite.jpg"));
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
@@ -613,7 +630,7 @@ public class UI extends javax.swing.JFrame {
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         // TODO add your handling code here:
         jButton29.setVisible(true);
-            
+        jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/run full speed.jpg"));    
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
@@ -625,8 +642,8 @@ public class UI extends javax.swing.JFrame {
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         // TODO add your handling code here:
          jButton30.setVisible(true);
-          jButton23.setVisible(false);
-           
+         jButton23.setVisible(false);
+         jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/matrix.jpg"));  
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
@@ -650,10 +667,12 @@ public class UI extends javax.swing.JFrame {
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
         // TODO add your handling code here:
+        jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/thanos dust.jpg"));
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
         // TODO add your handling code here:
+        jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/fall.jpg"));
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
@@ -663,6 +682,11 @@ public class UI extends javax.swing.JFrame {
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        // TODO add your handling code here:
+        jLabel1.setIcon(new ImageIcon("src/endtest/newpackage/Thanos Mop.jpg"));
+    }//GEN-LAST:event_jButton32ActionPerformed
 
     /**
      * @param args the command line arguments
