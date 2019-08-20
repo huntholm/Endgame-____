@@ -22,7 +22,8 @@ public class EndTest {
     public static void main(String[] args) {
         // TODO code application logic here
         Random rand = new Random();
-       int rand_int1 = rand.nextInt(14000000);
+        int numUniv = 14000000;
+        int rand_int1 = rand.nextInt(numUniv);
         System.out.println("Endgame: " + rand_int1); //Says title
         
         Scanner user = new Scanner(System.in);           //Ask name
@@ -32,8 +33,11 @@ public class EndTest {
         
         System.out.println("What is your superpower?");
         String power = user.next();
-        
-       java.awt.EventQueue.invokeLater(new Runnable() {
+        if (rand_int1 > numUniv / 2)
+            System.out.println("I suggest choosing the evil side.");
+        else
+            System.out.println("I suggest choosing the good side.");
+        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new UI().setVisible(true);
             }
